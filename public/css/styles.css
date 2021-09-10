@@ -1,0 +1,118 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+/* Header */ 
+
+.yellow-header {
+    background-color: #EAC926;
+}
+
+header img{
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.search-bar{
+    width: 300px;
+    height: 15px;
+    background-color: #eaeaea;
+    border: solid 0.5px #666;
+    margin-bottom: 3px;
+}
+
+.fa-search{
+    background-color: #ebebeb;
+    font-size: 20px;
+    border: solid 0.5px #666;
+}
+
+.center {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.burger-menu {
+    background-color: #1259c3;
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    margin-top: auto;
+}
+
+.fa-bars {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+
+/* MAIN */
+
+main img {
+    width: 150px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.precios{
+    font-size: 18px;
+}
+
+.descuentos{
+    font-size: 16px;
+}
+
+.descripciones{
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+
+/* FOOTER */ 
+
+.fa-credit-card {
+    font-size: 2em;
+    color: #1259c3;
+    margin-bottom: 10px;
+}
+
+.fa-gift {
+    font-size: 2em;
+    color: #1259c3;
+    margin-bottom: 10px;
+}
+
+.fa-user-shield{
+    font-size: 2em;
+    color: #1259c3;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer div {
+    color: #666;
+    text-align: center;
+}
