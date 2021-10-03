@@ -1,68 +1,126 @@
 * {
-    font-family: 'Roboto', sans-serif;
     font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Header */ 
 
-.yellow-header {
+header {
     background-color: #EAC926;
 }
 
-header img{
-    margin-bottom: 20px;
-    width: 300px;
+div.top-header{
+    padding: 5%;
 }
 
-.search-bar{
-    width: 300px;
+.top-header {
+    display: flex;
+    width: 100%;
+}
+
+.top-header .logo{
+    width: 50%;
+    padding: 20px;
+}
+
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    width: 100%;
+}
+
+
+.top-header header img{
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.top-header .search-bar{    
     height: 15px;
     background-color: #eaeaea;
-    border: solid 0.5px #666;
+    border: solid 2px #666;
     margin-bottom: 3px;
+    width: 50%;
+    border-radius: 60%;
 }
 
-.fa-search{
+
+
+.top-header .fa-search{
+    border: solid 1px black;
+    border-radius: 5px;
+    font-size: 23px;
     background-color: #ebebeb;
+}
+
+.ad {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    display:none;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
     font-size: 20px;
-    border: solid 0.5px #666;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
 }
 
-.center {
-    text-align: center;
-}
 
-ul {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.burger-menu {
-    background-color: #1259c3;
-    height: 50px;
-    width: 50px;
-    margin-left: auto;
-    margin-right: auto;
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    outline: none;
+    color: #666;
+    padding: 2px;
     border-radius: 7px;
-    margin-top: auto;
 }
 
-.fa-bars {
-    text-align: center;
-    color: white;
-    font-size: 25px;
-    height: 50px;
-    width: 50px;
-    vertical-align: middle;
-    display: table-cell;
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    color: #666;
+    width: 20%;
+    border-radius: 7px;
 }
+
+
+
+/* BANNER */
+
+.banner img{
+    width: 100%;
+}
+
 
 
 /* MAIN */
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
 
 main img {
     width: 150px;
@@ -70,40 +128,129 @@ main img {
 
 h2 {
     font-size: 24px;
+    color: #666;
+    margin: 15px 15px;
 }
 
-.precios{
+main section article {
+    margin: 10px 0px;
+    background-color: #FFF;
+}
+
+section .products img {
+    width: 100%;
+}
+
+.main-article .descriptions {
+    margin-top: 10px;
+    color: #666;
+}
+
+.background-color {
+    background-color: #ebebeb;
+}
+
+.main-article {
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+
+
+.box-pricing {
+    display: flex;
+}
+
+.box-pricing .price{
     font-size: 18px;
+    width: 30%;
 }
 
-.descuentos{
+.box-pricing .price-m{
+    font-size: 18px;
+    width: 40%;
+}
+
+.box-pricing .discount{
     font-size: 16px;
+    color: #39b54a;
+    width: 70%;
 }
 
-.descripciones{
+.box-pricing .discount-m{
+    font-size: 16px;
+    color: #39b54a;
+    width: 60%;
+}
+
+.descriptions{
     font-size: 16px;
     margin-bottom: 40px;
 }
 
 
+main section article i{
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;   
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    left: 300px;
+    bottom: -475px;
+}
+
+.fa-truck{
+    color: #39b54a;
+    transition: all 2s;
+}
+
+.fa-truck:hover {
+    transform: rotate(90deg);
+}
+
 /* FOOTER */ 
+
+.footer-background {
+    background-color: white;
+    margin-top: 30px;
+}
 
 .fa-credit-card {
     font-size: 2em;
     color: #1259c3;
     margin-bottom: 10px;
+    margin-top: 10px;
+    transition: color 2s;
+}
+
+.fa-credit-card:hover{
+    color: #00BFFF;
 }
 
 .fa-gift {
     font-size: 2em;
     color: #1259c3;
     margin-bottom: 10px;
+    transition: color 2s;
+}
+
+.fa-gift:hover{
+    color: #00BFFF;
 }
 
 .fa-user-shield{
     font-size: 2em;
     color: #1259c3;
     margin-bottom: 10px;
+    transition: color 2s;
+}
+
+.fa-user-shield:hover{
+    color: #00BFFF;
 }
 
 .title {
@@ -115,4 +262,254 @@ h2 {
 footer div {
     color: #666;
     text-align: center;
+}
+
+
+
+/* MEDIA QUERIES */ 
+
+@media (min-width: 361px){
+
+    /* Header */ 
+    
+    header nav{ 
+        display: block;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    article div.main-article{
+        width: 100%;
+        border-top: 1px solid #ebebeb;
+        padding: 15px;
+    }
+
+
+    /* Barra de Navegación */ 
+
+    .navbar {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        height: 15vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .navbar-items {
+        display: flex;
+        margin-right: 30px;
+    }
+    
+    .navbar-items li{
+        border-radius: 3px;
+        margin: 0 1px;
+        list-style-type: none;
+    }
+    
+    .navbar-items li a {
+        padding: 7px 13px;
+        text-decoration: none;
+        color: #000;
+        font-size: 15px;
+        display: block;
+    }
+
+
+    /* Productos */ 
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .products article {
+        width: 47%;
+    }
+
+    
+    .box-pricing {
+    display: flex;
+    width: 100%;
+    }
+
+    .box-pricing .price{
+    font-size: 18px;
+    width: 30%;
+    }
+
+    .box-pricing .price-m{
+    font-size: 18px;
+    width: 40%;
+    }
+
+    .box-pricing .discount{
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+    }
+
+    .box-pricing .discount-m{
+    font-size: 16px;
+    color: #39b54a;
+    width: 60%;
+    }
+
+
+    .products article {
+        transition: box-shadow 2s;
+    }
+    
+    .main-article .descriptions {
+        opacity: 0;
+        transition: all 2s;
+    }
+
+    .main-article .descriptions:hover{
+        opacity: 1;
+    }
+
+
+    main section article:hover {
+        box-shadow: 0px 0px 25px rgb(100, 100, 100);
+    }
+
+    /* FOOTER */
+
+    .footer-background {
+        background-color: white;
+        margin-top: 30px;
+    }
+    
+    .fa-credit-card {
+        font-size: 2em;
+        color: #1259c3;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    .fa-gift {
+        font-size: 2em;
+        color: #1259c3;
+        margin-bottom: 10px;
+    }
+    
+    .fa-user-shield{
+        font-size: 2em;
+        color: #1259c3;
+        margin-bottom: 10px;
+    }
+    
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    footer div {
+        color: #666;
+        text-align: center;
+    }
+    
+}
+
+
+@media (min-width: 769px){
+    .burger-menu {
+        display: none;
+    }
+
+    nav ul {
+        display: block;
+    }
+    
+    nav a {
+        display: block;
+    }
+
+    .products article {
+        width: 22%;
+    }
+
+    /* FOOTER */
+
+    .footer-background {
+        background-color: white;
+        margin-top: 10vh;
+    }
+    
+    .articles {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .credit-card-article {
+        width: 33%;
+    }
+
+
+    .fa-credit-card {
+        font-size: 2em;
+        color: #1259c3;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        transition: color 2s;
+    }
+    
+    .fa-credit-card:hover{
+        color: #00BFFF;
+    }
+    
+    .gift-article {
+        width: 33%;
+    }
+
+    .fa-gift {
+        font-size: 2em;
+        color: #1259c3;
+        margin-bottom: 10px;
+        transition: color 2s;
+    }
+    
+    .fa-gift:hover{
+        color: #00BFFF;
+    }
+    
+    .user-article { 
+        width: 33%;
+    }
+
+    .fa-user-shield{
+        font-size: 2em;
+        color: #1259c3;
+        margin-bottom: 10px;
+        transition: color 2s;
+    }
+    
+    .fa-user-shield:hover{
+        color: #00BFFF;
+    }
+    
+    .title {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .copyright { 
+        color: #666;
+    }
+
 }
